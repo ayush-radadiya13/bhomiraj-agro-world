@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Khedut Agro — Premium Agriculture E-commerce
+
+A premium, modern agriculture e-commerce homepage for farmers, selling seeds,
+fertilizers, pesticides, crop care and farm equipment. Built with cinematic
+scroll animations, a nature-inspired green/earth design system and a luxury UI.
+
+## Tech Stack
+
+- **Next.js 16** (App Router, Turbopack)
+- **React 19**
+- **Tailwind CSS v4** (CSS-first `@theme` configuration)
+- **Lenis** — smooth scrolling
+- **GSAP + ScrollTrigger** — parallax & image-zoom on scroll
+- **Framer Motion** — reveals, staggers, layout & page transitions
+- **Lucide React** — icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run start    # serve production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Loading screen with animated counter
+- Scroll progress bar + Lenis smooth scrolling
+- Sticky navbar with blur-on-scroll, mega menu, search, cart, wishlist, account
+  and a slide-in mobile menu
+- Hero with parallax background zoom, floating elements and scroll indicator
+- Shop by Category, Featured Products (filterable), Popular Brands marquee,
+  Best Selling slider, Seasonal picks, Offers, Why Choose Us (animated counters),
+  Customer Reviews marquee, Farming Tips, FAQ accordion, Contact form, Footer
+- Premium product cards: glass/shadow, image zoom, hover lift, wishlist, quick
+  view, gradient Add-to-Cart & Buy-Now buttons
+- Magnetic & ripple-style buttons, scroll-reveal, stagger and counter animations
+- Fully responsive (320px–1920px), no horizontal overflow, reduced-motion aware
+- SEO metadata, semantic HTML, lazy-loaded images
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+app/
+├── layout.js              # fonts, SEO metadata, providers
+├── page.js                # homepage composition
+├── globals.css            # Tailwind v4 theme + custom utilities/animations
+├── data/site.js           # categories, products, brands, reviews, tips, faqs
+└── components/
+    ├── SmoothScroll.jsx   # Lenis + GSAP ScrollTrigger integration
+    ├── LoadingScreen.jsx
+    ├── ScrollProgress.jsx
+    ├── Navbar.jsx
+    ├── Hero.jsx
+    ├── Categories.jsx
+    ├── FeaturedProducts.jsx
+    ├── ProductCard.jsx
+    ├── Brands.jsx
+    ├── BestSelling.jsx
+    ├── Seasonal.jsx
+    ├── Offers.jsx
+    ├── WhyChooseUs.jsx
+    ├── Reviews.jsx
+    ├── FarmingTips.jsx
+    ├── FAQ.jsx
+    ├── Contact.jsx
+    ├── Footer.jsx
+    └── ui/                 # Reveal, MagneticButton, AnimatedCounter,
+                            # SectionHeading, SmartImage
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Product/section imagery uses Unsplash via a `SmartImage` component with lazy
+  loading and a graceful green-gradient fallback (never shows a broken image).
+- Colors and design tokens live in `app/globals.css` under `@theme`.
