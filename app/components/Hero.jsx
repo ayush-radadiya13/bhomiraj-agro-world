@@ -8,7 +8,7 @@ import { brand, images } from "../data/site";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[100svh] items-end overflow-hidden pb-16 pt-28 md:items-center md:pb-24 md:pt-32">
+    <section className="relative flex min-h-[100svh] items-end overflow-hidden pb-24 pt-24 sm:pb-16 sm:pt-28 md:items-center md:pb-24 md:pt-32">
       <div className="absolute inset-0 -z-10">
         <SmartImage
           src={images.hero}
@@ -18,17 +18,17 @@ export default function Hero() {
           className="h-full w-full object-cover object-[center_30%]"
         />
         {/* Soft green at bottom for text contrast; fade to white at top for header */}
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/75 via-primary-800/25 to-white/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-900/80 via-primary-800/30 to-white/80" />
         <div className="absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-white to-transparent" />
-        <div className="absolute inset-y-0 left-0 w-full max-w-3xl bg-gradient-to-r from-primary-900/45 via-primary-900/15 to-transparent md:max-w-4xl" />
+        <div className="absolute inset-y-0 left-0 w-full max-w-3xl bg-gradient-to-r from-primary-900/50 via-primary-900/20 to-transparent md:max-w-4xl" />
       </div>
 
-      <div className="container-site relative z-10 max-w-3xl pl-6 sm:pl-10 md:pl-14 lg:pl-16">
+      <div className="container-site relative z-10 max-w-3xl sm:pl-4 md:pl-8 lg:pl-12">
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="font-display text-3xl font-600 leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[3.25rem]"
+          className="font-display text-[1.75rem] font-600 leading-tight tracking-tight text-white sm:text-4xl md:text-5xl lg:text-[3.25rem]"
         >
           {brand.heroHeading}
         </motion.h1>
@@ -37,7 +37,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.12 }}
-          className="mt-5 max-w-xl text-base leading-relaxed text-white/90 md:text-lg"
+          className="mt-4 max-w-xl text-sm leading-relaxed text-white/90 sm:mt-5 sm:text-base md:text-lg"
         >
           {brand.heroDescription}
         </motion.p>
@@ -46,11 +46,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25 }}
-          className="mt-9 flex flex-wrap gap-3"
+          className="mt-7 flex w-full flex-col gap-3 sm:mt-9 sm:w-auto sm:flex-row sm:flex-wrap"
         >
           <Link
             href="/products"
-            className="group inline-flex items-center gap-2.5 rounded-2xl bg-white px-7 py-3.5 text-sm font-600 text-primary shadow-[0_12px_28px_-10px_rgba(15,53,19,0.45)] transition duration-300 hover:-translate-y-0.5 hover:bg-primary-50 hover:shadow-[0_16px_36px_-12px_rgba(15,53,19,0.5)]"
+            className="group inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-white px-6 py-3.5 text-sm font-600 text-primary shadow-[0_12px_28px_-10px_rgba(15,53,19,0.45)] transition duration-300 hover:-translate-y-0.5 hover:bg-primary-50 hover:shadow-[0_16px_36px_-12px_rgba(15,53,19,0.5)] sm:w-auto sm:px-7"
           >
             Explore Products
             <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-primary text-white transition duration-300 group-hover:translate-x-0.5">
@@ -59,7 +59,7 @@ export default function Hero() {
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-2xl border border-white/50 bg-white/10 px-7 py-3.5 text-sm font-600 text-white backdrop-blur-sm transition hover:border-white hover:bg-white/20"
+            className="inline-flex w-full items-center justify-center rounded-2xl border border-white/50 bg-white/10 px-6 py-3.5 text-sm font-600 text-white backdrop-blur-sm transition hover:border-white hover:bg-white/20 sm:w-auto sm:px-7"
           >
             Contact Us
           </Link>

@@ -12,24 +12,24 @@ export default function Categories() {
       <div className="container-site">
         <SectionHeading
           eyebrow="Categories"
-          title="Agricultural Product"
+          title="Crop Protection"
           highlight="Categories"
-          description="Explore our curated range of seeds, crop medicines, plant nutrition, and bio products."
+          description="Explore our curated range of insecticides, fungicides, herbicides, and plant growth regulators."
         />
 
-        <StaggerGroup className="grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
+        <StaggerGroup className="grid grid-cols-1 gap-4 min-[400px]:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           {categories.map((cat) => (
             <StaggerItem key={cat.slug}>
               <Link
                 href={`/categories/${cat.slug}`}
                 className="group block overflow-hidden rounded-[20px] border border-line bg-white shadow-soft transition duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lift"
               >
-                <div className="relative aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#eef3f0]">
                   <SmartImage
                     src={cat.image}
                     alt={cat.name}
                     width={600}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    className="h-full w-full object-contain object-center p-4 transition duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="px-4 py-4 text-center">

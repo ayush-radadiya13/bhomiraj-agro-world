@@ -102,7 +102,13 @@ html.lenis body {
     margin-inline: auto;
     width: 100%;
     max-width: 72rem;
-    padding-inline: 1.25rem;
+    padding-inline: 1rem;
+  }
+
+  @media (min-width: 480px) {
+    .container-site {
+      padding-inline: 1.25rem;
+    }
   }
 
   @media (min-width: 640px) {
@@ -112,7 +118,13 @@ html.lenis body {
   }
 
   .section-pad {
-    padding-block: 4.5rem;
+    padding-block: 3.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-pad {
+      padding-block: 4.5rem;
+    }
   }
 
   @media (min-width: 768px) {
@@ -122,12 +134,18 @@ html.lenis body {
   }
 
   .section-pad.bg-white {
-    padding-block: 2.75rem;
+    padding-block: 2.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-pad.bg-white {
+      padding-block: 2.75rem;
+    }
   }
 
   @media (min-width: 768px) {
     .section-pad.bg-white {
-      padding-block: 3.5rem;  
+      padding-block: 3.5rem;
     }
   }
 
@@ -147,8 +165,15 @@ html.lenis body {
     background: var(--color-primary);
     color: white;
     font-weight: 600;
-    padding: 0.875rem 1.75rem;
+    padding: 0.875rem 1.5rem;
+    min-height: 2.75rem;
     transition: background-color 0.25s ease, transform 0.25s ease;
+  }
+
+  @media (min-width: 640px) {
+    .btn-primary {
+      padding: 0.875rem 1.75rem;
+    }
   }
 
   .btn-primary:hover {
@@ -165,8 +190,15 @@ html.lenis body {
     background: transparent;
     color: white;
     font-weight: 600;
-    padding: 0.875rem 1.75rem;
+    padding: 0.875rem 1.5rem;
+    min-height: 2.75rem;
     transition: background-color 0.25s ease, border-color 0.25s ease;
+  }
+
+  @media (min-width: 640px) {
+    .btn-secondary {
+      padding: 0.875rem 1.75rem;
+    }
   }
 
   .btn-secondary:hover {
@@ -184,8 +216,15 @@ html.lenis body {
     background: transparent;
     color: var(--color-primary);
     font-weight: 600;
-    padding: 0.875rem 1.75rem;
+    padding: 0.875rem 1.5rem;
+    min-height: 2.75rem;
     transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  @media (min-width: 640px) {
+    .btn-outline {
+      padding: 0.875rem 1.75rem;
+    }
   }
 
   .btn-outline:hover {

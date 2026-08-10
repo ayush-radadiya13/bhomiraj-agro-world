@@ -38,14 +38,14 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-primary-dark/70" />
         </div>
-        <div className="container-site relative z-10 py-16 md:py-24">
+        <div className="container-site relative z-10 py-12 sm:py-16 md:py-24">
           <p className="text-xs font-600 uppercase tracking-[0.2em] text-leaf">
             About Us
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-3xl font-600 tracking-tight text-white md:text-5xl">
+          <h1 className="mt-3 max-w-3xl font-display text-2xl font-600 tracking-tight text-white sm:text-3xl md:text-5xl">
             {brand.name}
           </h1>
-          <p className="mt-4 max-w-2xl text-base text-white/80 md:text-lg">
+          <p className="mt-3 max-w-2xl text-sm text-white/80 sm:mt-4 sm:text-base md:text-lg">
             {brand.tagline}. Building trust through quality seeds, crop solutions,
             and farmer-focused service.
           </p>

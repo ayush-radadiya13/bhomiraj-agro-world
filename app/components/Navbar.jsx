@@ -46,7 +46,7 @@ export default function Navbar() {
 
   const solid = scrolled || !hasDarkHero;
 
-  const whatsappHref = `https://wa.me/919510876266?text=${encodeURIComponent(
+  const whatsappHref = `https://wa.me/${brand.whatsapp}?text=${encodeURIComponent(
     "Hello Bhumiraj Agro World, I would like to enquire about your products."
   )}`;
 
@@ -59,9 +59,9 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="container-site flex items-center justify-between gap-4 py-2 pl-5 sm:pl-6 md:pl-8">
-          <Link href="/" className="flex shrink-0 items-center pl-1 sm:pl-2" aria-label={brand.name}>
-            <span className="relative h-11 w-11 overflow-hidden rounded-full bg-white shadow-soft ring-1 ring-primary/10 sm:h-12 sm:w-12">
+        <nav className="container-site flex items-center justify-between gap-3 py-2 sm:gap-4">
+          <Link href="/" className="flex shrink-0 items-center" aria-label={brand.name}>
+            <span className="relative h-10 w-10 overflow-hidden rounded-full bg-white shadow-soft ring-1 ring-primary/10 sm:h-12 sm:w-12">
               <SmartImage
                 src={brand.logo}
                 alt={brand.name}
@@ -100,12 +100,12 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-2 pr-1 sm:pr-2">
+          <div className="flex items-center gap-2">
             <a
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Chat on WhatsApp with +91 95108 76266"
+              aria-label={`Chat on WhatsApp with ${brand.phoneDisplay}`}
               className="hidden items-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-sm font-600 text-white shadow-soft transition hover:bg-[#1ebe57] hover:shadow-lift md:inline-flex"
             >
               <MessageCircle className="h-4 w-4" />
@@ -113,7 +113,7 @@ export default function Navbar() {
             </a>
 
             <button
-              className="flex h-10 w-10 items-center justify-center rounded-full text-primary transition hover:bg-primary-50 lg:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-full text-primary transition hover:bg-primary-50 lg:hidden"
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
@@ -138,7 +138,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed inset-y-0 right-0 z-[70] flex w-[86%] max-w-sm flex-col bg-white lg:hidden"
+              className="fixed inset-y-0 right-0 z-[70] flex w-[min(100%,22rem)] flex-col bg-white lg:hidden"
               data-lenis-prevent
             >
               <div className="flex items-center justify-between border-b border-line p-5">

@@ -33,14 +33,14 @@ export default function WhyChooseUs() {
             const Icon = icons[item.icon] || BadgeCheck;
             return (
               <StaggerItem key={item.title}>
-                <div className="group h-full rounded-[1.75rem] bg-white p-7 shadow-[0_8px_30px_-12px_rgba(46,125,50,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-16px_rgba(46,125,50,0.22)]">
-                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary-50 text-primary transition duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white">
-                    <Icon className="h-6 w-6" />
+                <div className="group h-full rounded-2xl bg-white p-5 shadow-[0_8px_30px_-12px_rgba(46,125,50,0.12)] transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-16px_rgba(46,125,50,0.22)] sm:rounded-[1.75rem] sm:p-7">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-50 text-primary transition duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white sm:h-14 sm:w-14">
+                    <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
-                  <h3 className="mt-6 font-display text-lg font-600 text-ink">
+                  <h3 className="mt-4 font-display text-base font-600 text-ink sm:mt-6 sm:text-lg">
                     {item.title}
                   </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-muted">
+                  <p className="mt-2 text-sm leading-relaxed text-muted sm:mt-2.5">
                     {item.description}
                   </p>
                 </div>
