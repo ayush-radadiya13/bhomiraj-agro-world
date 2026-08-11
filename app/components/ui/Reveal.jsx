@@ -21,17 +21,17 @@ export default function Reveal({
   duration = 0.7,
   className = "",
   once = true,
-  amount = 0.25,
+  amount = 0.15,
   as = "div",
 }) {
   const MotionTag = motion[as] || motion.div;
   return (
     <MotionTag
       className={className}
-      variants={variants[direction]}
+      variants={variants[direction] || variants.up}
       initial="hidden"
       whileInView="show"
-      viewport={{ once, amount }}
+      viewport={{ once, amount, margin: "120px 0px" }}
       transition={{ duration, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
@@ -45,14 +45,14 @@ export function StaggerGroup({
   stagger = 0.1,
   delayChildren = 0,
   once = true,
-  amount = 0.2,
+  amount = 0.15,
 }) {
   return (
     <motion.div
       className={className}
       initial="hidden"
       whileInView="show"
-      viewport={{ once, amount }}
+      viewport={{ once, amount, margin: "120px 0px" }}
       variants={{
         hidden: {},
         show: {

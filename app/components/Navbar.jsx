@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle, ArrowUpRight, Phone } from "lucide-react";
 import { brand, categories } from "../data/site";
 import SmartImage from "./ui/SmartImage";
 
@@ -113,9 +113,15 @@ export default function Navbar() {
             </a>
 
             <button
-              className="flex h-11 w-11 items-center justify-center rounded-full text-primary transition hover:bg-primary-50 lg:hidden"
+              type="button"
+              className={`flex h-11 w-11 items-center justify-center rounded-full transition lg:hidden ${
+                solid
+                  ? "text-primary hover:bg-primary-50"
+                  : "text-white hover:bg-white/15"
+              }`}
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
+              aria-expanded={mobileOpen}
             >
               <Menu className="h-5 w-5" />
             </button>
@@ -125,83 +131,138 @@ export default function Navbar() {
 
       <AnimatePresence>
         {mobileOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-[60] bg-ink/40 lg:hidden"
-              onClick={() => setMobileOpen(false)}
-            />
-            <motion.aside
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "tween", duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="fixed inset-y-0 right-0 z-[70] flex w-[min(100%,22rem)] flex-col bg-white lg:hidden"
-              data-lenis-prevent
-            >
-              <div className="flex items-center justify-between border-b border-line p-5">
-                <span className="font-display text-lg font-600 text-ink">
-                  {brand.shortName}
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-0 z-[80] flex flex-col bg-white lg:hidden"
+            data-lenis-prevent
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+          >
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
+              <div className="absolute -right-16 -top-20 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
+              <div className="absolute -bottom-24 -left-16 h-72 w-72 rounded-full bg-leaf/10 blur-3xl" />
+            </div>
+
+            <div className="relative z-10 flex items-center justify-between border-b border-primary/8 px-5 pb-3 pt-[max(1rem,env(safe-area-inset-top))]">
+              <Link
+                href="/"
+                className="flex items-center gap-3"
+                onClick={() => setMobileOpen(false)}
+              >
+                <span className="relative h-11 w-11 overflow-hidden rounded-full bg-white shadow-soft ring-1 ring-primary/10">
+                  <SmartImage
+                    src={brand.logo}
+                    alt={brand.name}
+                    width={96}
+                    className="h-full w-full object-contain p-0.5"
+                  />
                 </span>
-                <button
-                  onClick={() => setMobileOpen(false)}
-                  aria-label="Close menu"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-bg text-ink"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </div>
+                <div>
+                  <p className="font-display text-base font-600 text-ink">
+                    {brand.shortName}
+                  </p>
+                  <p className="text-[11px] text-muted">{brand.tagline}</p>
+                </div>
+              </Link>
+              <button
+                type="button"
+                onClick={() => setMobileOpen(false)}
+                aria-label="Close menu"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/10 bg-primary-50 text-primary transition hover:bg-primary-100"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
 
-              <nav className="flex-1 overflow-y-auto p-5">
-                <ul className="flex flex-col gap-1">
-                  {navLinks.map((link) => (
-                    <li key={link.label}>
-                      <Link
-                        href={link.href}
-                        className={`block rounded-2xl px-4 py-3.5 text-base font-600 transition ${
-                          isActive(link.href)
-                            ? "bg-primary-50 text-primary"
-                            : "text-ink hover:bg-bg"
-                        }`}
-                      >
+            <nav className="relative z-10 flex flex-1 flex-col overflow-y-auto px-5 pb-6 pt-4">
+              <ul className="flex flex-col gap-1">
+                {navLinks.map((link, i) => (
+                  <motion.li
+                    key={link.label}
+                    initial={{ opacity: 0, y: 18 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      delay: 0.06 + i * 0.05,
+                      duration: 0.4,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                  >
+                    <Link
+                      href={link.href}
+                      className={`group flex items-center justify-between rounded-2xl px-4 py-3.5 transition ${
+                        isActive(link.href)
+                          ? "bg-primary-50 text-primary"
+                          : "text-ink/80 hover:bg-primary-50/70 hover:text-primary"
+                      }`}
+                    >
+                      <span className="font-display text-[1.35rem] font-600 tracking-tight sm:text-2xl">
                         {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                      </span>
+                      <ArrowUpRight
+                        className={`h-5 w-5 transition ${
+                          isActive(link.href)
+                            ? "text-primary"
+                            : "text-ink/25 group-hover:text-primary/70"
+                        }`}
+                      />
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
 
-                <p className="mt-6 px-4 text-xs font-600 uppercase tracking-widest text-muted">
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.32, duration: 0.4 }}
+                className="mt-8"
+              >
+                <p className="px-1 text-[11px] font-600 uppercase tracking-[0.2em] text-muted">
                   Categories
                 </p>
-                <ul className="mt-2 space-y-1">
+                <div className="mt-3 grid grid-cols-2 gap-2.5">
                   {categories.map((cat) => (
-                    <li key={cat.slug}>
-                      <Link
-                        href={`/categories/${cat.slug}`}
-                        className="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-500 text-ink hover:bg-bg"
-                      >
-                        <cat.icon className="h-4 w-4 text-primary" />
-                        {cat.name}
-                      </Link>
-                    </li>
+                    <Link
+                      key={cat.slug}
+                      href={`/categories/${cat.slug}`}
+                      className="flex items-center gap-2.5 rounded-2xl border border-primary/10 bg-primary-50/50 px-3.5 py-3.5 text-sm font-600 text-ink transition hover:border-primary/25 hover:bg-primary-50"
+                    >
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-white text-primary shadow-soft ring-1 ring-primary/10">
+                        <cat.icon className="h-4 w-4" />
+                      </span>
+                      <span className="leading-tight">{cat.name}</span>
+                    </Link>
                   ))}
-                </ul>
-              </nav>
+                </div>
+              </motion.div>
 
-              <div className="border-t border-line p-5">
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.4 }}
+                className="mt-auto space-y-3 pt-10 pb-[max(0.5rem,env(safe-area-inset-bottom))]"
+              >
                 <a
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary w-full"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-5 py-3.5 text-sm font-600 text-white transition hover:bg-[#1ebe57]"
                 >
-                  <MessageCircle className="h-4 w-4" /> WhatsApp
+                  <MessageCircle className="h-4 w-4" /> WhatsApp Enquiry
                 </a>
-              </div>
-            </motion.aside>
-          </>
+                <a
+                  href={brand.phoneHref}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/15 bg-primary-50 px-5 py-3.5 text-sm font-600 text-primary transition hover:bg-primary-100"
+                >
+                  <Phone className="h-4 w-4" /> {brand.phoneDisplay}
+                </a>
+              </motion.div>
+            </nav>
+          </motion.div>
         )}
       </AnimatePresence>
     </>

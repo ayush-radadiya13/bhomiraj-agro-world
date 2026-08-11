@@ -501,7 +501,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "AMAZON"
   },
   {
     "id": 22,
@@ -525,7 +526,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "AZOCA"
   },
   {
     "id": 23,
@@ -549,7 +551,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "AZODEN"
   },
   {
     "id": 24,
@@ -573,7 +576,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "BHUMI CURE"
   },
   {
     "id": 25,
@@ -597,7 +601,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "DIFENCE"
   },
   {
     "id": 26,
@@ -621,7 +626,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "HEERAMANI"
   },
   {
     "id": 27,
@@ -645,7 +651,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "BHUMI GOLD"
   },
   {
     "id": 28,
@@ -669,7 +676,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "HELIX"
   },
   {
     "id": 29,
@@ -693,7 +701,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "JUSTIN-50"
   },
   {
     "id": 30,
@@ -717,7 +726,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "KAPTAN"
   },
   {
     "id": 31,
@@ -741,7 +751,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "HEXON-5"
   },
   {
     "id": 32,
@@ -765,7 +776,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "POKO"
   },
   {
     "id": 33,
@@ -789,7 +801,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "SAFAL"
   },
   {
     "id": 34,
@@ -813,7 +826,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "Mr. M-45"
   },
   {
     "id": 35,
@@ -837,7 +851,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "SULFO-40"
   },
   {
     "id": 36,
@@ -861,7 +876,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "ZYDUS-80"
   },
   {
     "id": 37,
@@ -885,7 +901,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "SAFRON-80"
   },
   {
     "id": 38,
@@ -910,7 +927,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "CLEANSER"
   },
   {
     "id": 39,
@@ -935,7 +953,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "FIRE-58"
   },
   {
     "id": 40,
@@ -960,7 +979,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "GlyChin-41"
   },
   {
     "id": 41,
@@ -985,7 +1005,8 @@ export const catalogProducts = [
     ],
     "packing": "Pouch",
     "packaging": "Pouch",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "BHUMI-71"
   },
   {
     "id": 42,
@@ -1010,7 +1031,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "Oxy Goal"
   },
   {
     "id": 43,
@@ -1035,7 +1057,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "OPERA"
   },
   {
     "id": 44,
@@ -1060,7 +1083,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "PERASUT"
   },
   {
     "id": 45,
@@ -1085,7 +1109,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "TORAGON SUPER"
   },
   {
     "id": 46,
@@ -1110,7 +1135,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "Trandy Star"
   },
   {
     "id": 47,
@@ -1135,7 +1161,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "PENDULAM"
   },
   {
     "id": 48,
@@ -1160,7 +1187,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "Pilot"
   },
   {
     "id": 49,
@@ -1185,7 +1213,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "GIBBROL"
   },
   {
     "id": 50,
@@ -1210,7 +1239,8 @@ export const catalogProducts = [
     ],
     "packing": "Bottle",
     "packaging": "Bottle",
-    "fromPdf": true
+    "fromPdf": true,
+    "title": "FINIX"
   },
   {
     "id": 51,
@@ -1223,7 +1253,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/ace-gaurd.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Ace Gaurd",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 52,
@@ -1236,7 +1278,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/acefen.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Acefen",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Acephate 50% + Bifenthrin 10% WDG"
   },
   {
     "id": 53,
@@ -1249,7 +1303,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/arjun.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Arjun",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Emamectin Benzoate 1.9% EC"
   },
   {
     "id": 54,
@@ -1262,7 +1328,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/balwan.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Balwan",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Thiamethoxam 12.6% + Lambda Cyhalothrin 9.5% ZC for Indigenous Manufacture"
   },
   {
     "id": 55,
@@ -1275,7 +1353,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/benzonil.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Benzonil",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Emamectin Benzoate 1.5% + Fipronil 3.5% SC for indigenous manufacture"
   },
   {
     "id": 56,
@@ -1288,7 +1378,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/bhoomi-pride.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Bhoomi Pride",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 57,
@@ -1301,7 +1403,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/bomber.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Bomber",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 58,
@@ -1314,7 +1428,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/br-conflic.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Br Conflic",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 59,
@@ -1327,7 +1453,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/BSF.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Bsf",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Bifenthrin 10% EC w/w"
   },
   {
     "id": 60,
@@ -1340,7 +1478,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/BUFFET.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Buffet",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Bifenthrin 15% +Acephate 35% WP for indigenous manufacture"
   },
   {
     "id": 61,
@@ -1353,7 +1503,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/CLOMAX-50.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Clomax 50",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Chlorpyrifos 50% E.C."
   },
   {
     "id": 62,
@@ -1366,7 +1528,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/CLOMAX.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Clomax",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 63,
@@ -1379,7 +1553,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/COBRA-50.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Cobra 50",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Cartap Hydrochloride 50% SP"
   },
   {
     "id": 64,
@@ -1392,7 +1578,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/CONFLIC.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Conflic",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Imidacloprid 17.8% SL"
   },
   {
     "id": 65,
@@ -1405,7 +1603,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/corzin.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Corzin",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Chlorantraniliprole 18.5% w/w SC"
   },
   {
     "id": 66,
@@ -1418,7 +1628,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/cyprus-10.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Cyprus 10",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Cypermethrin 10% E.C"
   },
   {
     "id": 67,
@@ -1431,7 +1653,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/cyprus-25.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Cyprus 25",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Cypermethrin 25% E.C."
   },
   {
     "id": 68,
@@ -1444,7 +1678,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/danger.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Danger",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Neem Oil Based EC containing Azadirachtin 0.03% (300 PPM) Min."
   },
   {
     "id": 69,
@@ -1457,7 +1703,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/deltin-11.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Deltin 11",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Deltamethrin 11% w/w EC"
   },
   {
     "id": 70,
@@ -1470,7 +1728,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/fimida.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Fimida",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Fipronil 40% + Imidacloprid 40% WG"
   },
   {
     "id": 71,
@@ -1483,7 +1753,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/promectin.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Promectin",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Emamectin Benzoate 5% SG"
   },
   {
     "id": 72,
@@ -1496,7 +1778,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/proton.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Proton",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "As per product specification."
   },
   {
     "id": 73,
@@ -1509,7 +1803,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/raxxa-plus.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Raxxa Plus",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Thiamethoxam 30% FS"
   },
   {
     "id": 74,
@@ -1522,7 +1828,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/shatru.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Shatru",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Abamectin 1.9% EC"
   },
   {
     "id": 75,
@@ -1535,7 +1853,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/thiovita.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Thiovita",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Thiamethoxam 25% WG"
   },
   {
     "id": 76,
@@ -1548,7 +1878,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/xolo-50.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Xolo 50",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Diafenthiuron 50% WP"
   },
   {
     "id": 77,
@@ -1561,7 +1903,19 @@ export const catalogProducts = [
     "gallery": [
       "/product image/Insecticide/xplod.jpeg"
     ],
-    "fromPdf": false
+    "fromPdf": true,
+    "title": "Xplod",
+    "description": "This product is formulated to provide reliable field performance, support healthy crop development, improve plant vigor, and contribute to better productivity when applied at the recommended stage and dosage.",
+    "features": [
+      "Supports healthy crop growth.",
+      "Reliable field performance.",
+      "Helps improve crop vigor and productivity.",
+      "Easy to apply with uniform coverage.",
+      "Suitable for agricultural crop use."
+    ],
+    "packing": "Bottle / Pouch / Box (as applicable)",
+    "packaging": "Bottle / Pouch / Box (as applicable)",
+    "composition": "Chlorantraniliprole 9.3% + Lambda cyhalothrin 4.6% ZC"
   },
   {
     "id": 78,

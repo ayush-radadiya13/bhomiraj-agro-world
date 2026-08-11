@@ -11,17 +11,22 @@ export default function SmartImage({
   alt = "",
   className = "",
   width = 800,
+  height,
   priority = false,
   sizes,
 }) {
   const [failed, setFailed] = useState(false);
 
-  const optimized =
-    src && src.includes("images.unsplash.com")
-      ? `${src}?auto=format&fit=crop&w=${width}&q=70`
-      : src;
+  // Encode spaces in local paths so browsers reliably load `/product image/...`
+  const normalized =
+    typeof src === "string" ? src.replace(/ /g, "%20") : src;
 
-  if (failed || !src) {
+  const optimized =
+    normalized && normalized.includes("images.unsplash.com")
+      ? `${normalized}${normalized.includes("?") ? "&" : "?"}auto=format&fit=crop&w=${width}&q=70`
+      : normalized;
+
+  if (failed || !normalized) {
     return (
       <div
         className={`flex items-center justify-center bg-primary ${className}`}
@@ -48,6 +53,8 @@ export default function SmartImage({
     <img
       src={optimized}
       alt={alt}
+      width={width}
+      height={height}
       sizes={sizes}
       loading={priority ? "eager" : "lazy"}
       decoding="async"

@@ -7,7 +7,7 @@ import ProductGridWithPopup from "./ProductGridWithPopup";
 import { products } from "../data/site";
 
 export default function HomeProducts() {
-  const preview = products.slice(0, 4);
+  const preview = products.slice(0, 12);
 
   return (
     <section className="relative bg-bg py-14 sm:py-20 md:py-28">
@@ -32,7 +32,7 @@ export default function HomeProducts() {
         <div className="mt-8 sm:mt-12">
           <ProductGridWithPopup
             products={preview}
-            className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4"
+            className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4"
           />
         </div>
       </div>

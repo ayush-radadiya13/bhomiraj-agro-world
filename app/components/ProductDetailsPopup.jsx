@@ -39,10 +39,11 @@ export default function ProductDetailsPopup({ product, open, onClose }) {
   }, [open, onClose]);
 
   const enquiryText = encodeURIComponent(
-    `Hello Bhumiraj Agro World, I would like to enquire about ${product?.name || "your product"}.`
+    `Hello Bhumiraj Agro World, I would like to enquire about ${product?.title || product?.name || "your product"}.`
   );
   const whatsappHref = `https://wa.me/${brand.whatsapp}?text=${enquiryText}`;
 
+  const title = product?.title || product?.name || "";
   const features = product?.features?.length ? product.features : [];
   const packing = product?.packing || product?.packaging || "";
   const description = product?.description || "";
@@ -103,7 +104,7 @@ export default function ProductDetailsPopup({ product, open, onClose }) {
                       alt={product.name}
                       width={800}
                       priority
-                      className="mx-auto h-[200px] w-full object-contain object-center sm:h-[300px]"
+                      className="mx-auto h-[180px] w-full object-contain object-center sm:h-[240px] md:h-[260px]"
                     />
                   </div>
                 </div>
@@ -113,11 +114,19 @@ export default function ProductDetailsPopup({ product, open, onClose }) {
                     id="product-popup-title"
                     className="font-display text-xl font-700 tracking-tight text-ink sm:text-[1.85rem]"
                   >
-                    {product.name}
+                    {title}
                   </h2>
 
+                  {showPdfDetails && description ? (
+                    <Section
+                      icon={FileText}
+                      title="Description"
+                      body={description}
+                    />
+                  ) : null}
+
                   {showPdfDetails && features.length > 0 ? (
-                    <div className="mt-4 border border-[#e6eee9] bg-[#f8faf8] p-4">
+                    <div className="mt-3 border border-[#e6eee9] bg-[#f8faf8] p-4">
                       <div className="mb-3 flex items-center gap-2">
                         <span className="flex h-8 w-8 items-center justify-center bg-primary text-white">
                           <Sparkles className="h-4 w-4" />
@@ -127,25 +136,17 @@ export default function ProductDetailsPopup({ product, open, onClose }) {
                         </h3>
                       </div>
                       <ul className="space-y-2">
-                        {features.map((item) => (
+                        {features.map((item, index) => (
                           <li
-                            key={item}
+                            key={`${index}-${typeof item === "string" ? item : "feature"}`}
                             className="flex items-start gap-2 text-sm text-muted"
                           >
                             <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                            <span>{item}</span>
+                            <span>{typeof item === "string" ? item : String(item)}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
-                  ) : null}
-
-                  {showPdfDetails && description ? (
-                    <Section
-                      icon={FileText}
-                      title="Description"
-                      body={description}
-                    />
                   ) : null}
 
                   {showPdfDetails && packing ? (

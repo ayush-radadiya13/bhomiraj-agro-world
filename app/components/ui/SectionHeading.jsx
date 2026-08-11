@@ -23,7 +23,7 @@ export default function SectionHeading({
 
   return (
     <Reveal
-      className={`mb-8 max-w-2xl sm:mb-10 md:mb-14 ${
+      className={`mb-7 max-w-2xl sm:mb-9 md:mb-11 ${
         align === "center" ? "mx-auto text-center" : "text-left"
       }`}
     >
@@ -37,7 +37,7 @@ export default function SectionHeading({
         </p>
       )}
       <h2
-        className={`font-display text-2xl font-600 tracking-tight sm:text-3xl md:text-4xl ${
+        className={`font-display text-[1.65rem] font-600 tracking-tight sm:text-3xl md:text-[2.15rem] lg:text-4xl ${
           light ? "text-white" : "text-ink"
         }`}
       >

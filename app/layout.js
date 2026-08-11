@@ -4,9 +4,8 @@ import SmoothScroll from "./components/SmoothScroll";
 import Navbar from "./components/Navbar";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
-import FloatingActions from "./components/FloatingActions";
 import { brand } from "./data/site";
-import { DEFAULT_OG_IMAGE } from "./lib/seo";
+import { DEFAULT_OG_IMAGE, generateLocalBusinessSchema } from "./lib/seo";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,13 +21,13 @@ const poppins = Poppins({
 });
 
 const siteDescription =
-  "Premium insecticides, fungicides, herbicides & PGR from Bhumiraj Agro World, Rajkot. Enquire for trusted crop protection solutions.";
+  "Premium insecticides, fungicides, herbicides & PGR from Bhumiraj Agro World, Rajkot, Gujarat. Enquire for trusted crop protection solutions.";
 
 export const metadata = {
-  metadataBase: new URL("https://bhumirajagroworld.com"),
+  metadataBase: new URL("https://bhumirajagroworld.in"),
   title: {
-    default: `${brand.name} — ${brand.tagline}`,
-    template: `%s | ${brand.name}`,
+    default: brand.name,
+    template: "%s",
   },
   description: siteDescription,
   keywords: [
@@ -41,6 +40,7 @@ export const metadata = {
     "crop protection",
     "Rajkot",
     "Gujarat",
+    "Saurashtra",
   ],
   authors: [{ name: brand.name }],
   creator: brand.name,
@@ -60,7 +60,7 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${brand.name} — ${brand.tagline}`,
+    title: brand.name,
     description: siteDescription,
     url: "/",
     siteName: brand.name,
@@ -77,7 +77,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${brand.name} — ${brand.tagline}`,
+    title: brand.name,
     description: siteDescription,
     images: [DEFAULT_OG_IMAGE],
   },
@@ -91,21 +91,31 @@ export const viewport = {
   themeColor: "#2E7D32",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }) {
+  const localBusinessJsonLd = generateLocalBusinessSchema();
+
   return (
     <html
       lang="en-IN"
       className={`${inter.variable} ${poppins.variable} antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
+        />
+      </head>
       <body className="min-h-screen bg-bg text-ink">
         <SmoothScroll>
           <Navbar />
-          <main className="pb-[5.5rem] md:pb-0">{children}</main>
+          <main>{children}</main>
           <CTA />
           <Footer />
-          <FloatingActions />
         </SmoothScroll>
       </body>
     </html>

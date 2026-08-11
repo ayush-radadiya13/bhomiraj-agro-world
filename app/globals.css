@@ -47,13 +47,14 @@
 html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: auto;
+  overflow-x: clip;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -88,9 +89,9 @@ html.lenis body {
   border-radius: 999px;
 }
 
-::selection {
-  background: #2e7d32;
-  color: white;
+img,
+video {
+  max-width: 100%;
 }
 
 @layer utilities {
@@ -118,34 +119,46 @@ html.lenis body {
   }
 
   .section-pad {
-    padding-block: 3.25rem;
+    padding-block: 1.75rem;
   }
 
   @media (min-width: 640px) {
     .section-pad {
-      padding-block: 4.5rem;
+      padding-block: 2.5rem;
     }
   }
 
   @media (min-width: 768px) {
     .section-pad {
-      padding-block: 6rem;
+      padding-block: 3.25rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-pad {
+      padding-block: 3.75rem;
     }
   }
 
   .section-pad.bg-white {
-    padding-block: 2.25rem;
+    padding-block: 1.35rem;
   }
 
   @media (min-width: 640px) {
     .section-pad.bg-white {
-      padding-block: 2.75rem;
+      padding-block: 1.75rem;
     }
   }
 
   @media (min-width: 768px) {
     .section-pad.bg-white {
-      padding-block: 3.5rem;
+      padding-block: 2.25rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-pad.bg-white {
+      padding-block: 2.75rem;
     }
   }
 

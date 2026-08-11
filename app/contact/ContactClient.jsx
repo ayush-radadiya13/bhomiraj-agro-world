@@ -203,7 +203,7 @@ export default function ContactClient() {
               <iframe
                 title="Bhumiraj Agro World on Google Maps"
                 src={brand.mapEmbedUrl}
-                className="h-[280px] w-full border-0 sm:h-[360px] md:h-[420px]"
+                className="h-[240px] w-full border-0 sm:h-[300px] md:h-[340px]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

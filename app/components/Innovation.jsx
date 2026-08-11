@@ -7,9 +7,9 @@ import SmartImage from "./ui/SmartImage";
 import AnimatedCounter from "./ui/AnimatedCounter";
 
 const stats = [
-  { value: 10, suffix: "+", label: "Years Experience" },
-  { value: 200, suffix: "+", label: "Products" },
-  { value: 5000, suffix: "+", label: "Happy Farmers" },
+  { value: 2, suffix: "", label: "Years Experience" },
+  { value: 70, suffix: "+", label: "Products" },
+  { value: 500, suffix: "+", label: "Happy Farmers" },
 ];
 
 const productImage =

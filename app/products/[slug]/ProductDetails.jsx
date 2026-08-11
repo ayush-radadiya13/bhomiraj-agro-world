@@ -15,8 +15,9 @@ function WhatsAppIcon({ className = "h-5 w-5" }) {
 }
 
 export default function ProductDetails({ product, related }) {
+  const title = product.title || product.name;
   const enquiryText = encodeURIComponent(
-    `Hello Bhumiraj Agro World, I would like to enquire about ${product.name}.`
+    `Hello Bhumiraj Agro World, I would like to enquire about ${title}.`
   );
   const whatsappHref = `https://wa.me/${brand.whatsapp}?text=${enquiryText}`;
   const features = product.features?.length ? product.features : [];
@@ -41,10 +42,10 @@ export default function ProductDetails({ product, related }) {
               <div className="bg-white p-3 sm:p-4">
                 <SmartImage
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} - ${product.category} crop protection product by Bhumiraj Agro World`}
                   width={1000}
                   priority
-                  className="mx-auto h-[240px] w-full object-contain object-center sm:h-[340px]"
+                  className="mx-auto h-[200px] w-full object-contain object-center sm:h-[260px] md:h-[300px]"
                 />
               </div>
             </div>
@@ -54,12 +55,9 @@ export default function ProductDetails({ product, related }) {
                 {product.category}
               </p>
               <h1 className="mt-2 font-display text-2xl font-700 tracking-tight text-ink sm:text-3xl md:text-4xl">
-                {product.name}
+                {title}
               </h1>
 
-              {showPdfDetails && composition ? (
-                <DetailBlock icon={FlaskConical} title="Composition" body={composition} />
-              ) : null}
               {showPdfDetails && description ? (
                 <DetailBlock icon={FileText} title="Description" body={description} />
               ) : null}
@@ -69,7 +67,7 @@ export default function ProductDetails({ product, related }) {
                     <span className="flex h-8 w-8 items-center justify-center bg-primary text-white">
                       <Sparkles className="h-4 w-4" />
                     </span>
-                    <h2 className="font-display text-base font-700 text-ink">Features</h2>
+                    <h3 className="font-display text-base font-700 text-ink">Features</h3>
                   </div>
                   <ul className="space-y-2">
                     {features.map((item) => (
@@ -83,6 +81,9 @@ export default function ProductDetails({ product, related }) {
               ) : null}
               {showPdfDetails && packing ? (
                 <DetailBlock icon={Package} title="Package" body={packing} />
+              ) : null}
+              {showPdfDetails && composition ? (
+                <DetailBlock icon={FlaskConical} title="Composition" body={composition} />
               ) : null}
 
               <div className="mt-6 border-t border-[#e6eee9] pt-5">
@@ -123,7 +124,7 @@ function DetailBlock({ icon: Icon, title, body }) {
         <span className="flex h-8 w-8 items-center justify-center bg-primary text-white">
           <Icon className="h-4 w-4" />
         </span>
-        <h2 className="font-display text-base font-700 text-ink">{title}</h2>
+        <h3 className="font-display text-base font-700 text-ink">{title}</h3>
       </div>
       <p className="text-sm leading-relaxed text-muted">{body}</p>
     </div>

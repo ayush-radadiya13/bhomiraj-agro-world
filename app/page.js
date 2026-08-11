@@ -6,9 +6,9 @@ import About from "./components/About";
 import { brand } from "./data/site";
 import { DEFAULT_OG_IMAGE } from "./lib/seo";
 
-const homeTitle = `${brand.name} — ${brand.tagline}`;
+const homeTitle = brand.name;
 const homeDescription =
-  "Premium insecticides, fungicides, herbicides & PGR from Bhumiraj Agro World, Rajkot. Enquire for crop protection solutions trusted by farmers.";
+  "Leading supplier of insecticides, fungicides, herbicides & PGR products in Rajkot, Gujarat. Buy trusted crop protection solutions for better farm harvest.";
 
 export const metadata = {
   title: {
@@ -20,8 +20,7 @@ export const metadata = {
   },
   openGraph: {
     title: homeTitle,
-    description:
-      "Crop protection and plant growth products for better harvests. Based in Rajkot, Gujarat.",
+    description: homeDescription,
     url: "/",
     type: "website",
     images: [
@@ -29,7 +28,7 @@ export const metadata = {
         url: DEFAULT_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: `${brand.name} hero banner`,
+        alt: `${brand.name} — Crop protection products in Rajkot, Gujarat`,
       },
     ],
   },

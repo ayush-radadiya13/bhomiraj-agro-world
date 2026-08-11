@@ -13,7 +13,7 @@ import { catalogProducts } from "./catalogProducts";
 const img = {
   field: "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
   wheat: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b",
-  soilHands: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b",
+  soilHands: "/assets/about-us2.png",
   seedling: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8",
   corn: "https://images.unsplash.com/photo-1601593768799-76d8aa4d1f76",
   tomato: "https://images.unsplash.com/photo-1592841200221-a6898f307baa",
@@ -21,16 +21,17 @@ const img = {
   spray: "https://images.unsplash.com/photo-1592982537447-7440770cbfc9",
   fruit: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e",
   leaves: "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
-  harvest: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449",
+  harvest: "/assets/about-us1.png",
   sunrise: "https://images.unsplash.com/photo-1492496913980-501348b61469",
-  hero: "/assets/hero-banner.png",
+  hero: "/product%20image/desktop-main.png",
+  heroMobile: "/product%20image/mobile-main.png",
   tractor: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449",
   farmer: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae",
   packaging: "https://images.unsplash.com/photo-1589923188900-85dae523342b",
-  insecticide: "/product image/Insecticide/bhoomi-pride.jpeg",
-  fungicide: "/product image/Fungicide/bhumi-gold.jpeg",
-  herbicide: "/product image/Herbicide/bhumi-71.jpeg",
-  pgr: "/product image/PGR/finix.jpeg",
+  insecticide: "/product%20image/insecrticide-cat.png",
+  fungicide: "/product%20image/fungicide-cat.png",
+  herbicide: "/product%20image/herbicide-cat.png",
+  pgr: "/product%20image/PGR-cat.png",
 };
 
 export const brand = {
@@ -43,7 +44,7 @@ export const brand = {
   whatsapp: "917046879216",
   email: "bhumirajagroworld@gmail.com",
   address:
-    "Survey No. 444, Plot No. 71, Rivera Industrial Zone-2, At Veraval-Shapar, Ta. Kotda Sangani, Dist. Rajkot – 360026",
+    "Survey No. 444, Plot No. 71, Rivera Industrial Zone-2, At Veraval-Shapar, Ta.\u00A0Kotda\u00A0Sangani, Dist. Rajkot – 360026",
   hours: "Mon – Sat: 9:00 AM – 7:00 PM",
   mapEmbedUrl:
     "https://www.google.com/maps?q=Bhumiraj+Agro+World@22.150776,70.819782&z=17&output=embed",
@@ -52,7 +53,7 @@ export const brand = {
   heroHeading:
     "Empowering Agriculture with Premium Seeds & Medicine Solutions",
   heroDescription:
-    "High-quality agricultural products designed to improve crop health, increase productivity, and support sustainable farming.",
+    "Bhumiraj Agro World delivers trusted agricultural solutions for healthier crops and higher yields.",
   logo: "/assets/bhumiraj.jpg",
 };
 
@@ -172,9 +173,9 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: 15, suffix: "+", label: "Years Experience" },
-  { value: 400, suffix: "+", label: "Products" },
-  { value: 12000, suffix: "+", label: "Happy Farmers" },
+  { value: 2, suffix: "", label: "Years Experience" },
+  { value: 70, suffix: "+", label: "Products" },
+  { value: 500, suffix: "+", label: "Happy Farmers" },
   { value: 24, suffix: "/7", label: "Support" },
 ];
 

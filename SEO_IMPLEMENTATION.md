@@ -1,7 +1,7 @@
 # SEO Implementation Guide — Bhumiraj Agro World
 
 **Project:** `agro-mohit` (Next.js App Router)  
-**Live domain (metadataBase):** `https://bhumirajagroworld.com`  
+**Live domain (metadataBase):** `https://bhumirajagroworld.in`  
 **Brand:** Bhumiraj Agro World  
 **Stack:** Next.js 16 App Router · React · no `next-seo` / schema packages yet  
 
@@ -168,7 +168,7 @@ For product pages, set `openGraph.type` to `"website"` (or use Product JSON-LD; 
 |-------|-------------------|
 | `title.default` | Keep: `Bhumiraj Agro World — Growing Better Harvests Together` |
 | `description` | Align with actual catalog (crop protection + PGR), include Rajkot/Gujarat if local SEO matters |
-| `openGraph.url` | `https://bhumirajagroworld.com` |
+| `openGraph.url` | `https://bhumirajagroworld.in` |
 | `openGraph.images` | Default brand OG image |
 | `openGraph.description` | Match `description` (fix mismatch: currently mentions seeds heavily) |
 | `twitter.card` | `summary_large_image` |
@@ -371,7 +371,7 @@ Avoid keyword stuffing in titles.
 ```js
 import { products, categories } from "./data/site";
 
-const base = "https://bhumirajagroworld.com";
+const base = "https://bhumirajagroworld.in";
 
 export default function sitemap() {
   const staticRoutes = ["", "/about", "/contact", "/products", "/categories", "/privacy", "/terms"].map(
@@ -410,8 +410,8 @@ Exclude `/sections`.
 export default function robots() {
   return {
     rules: { userAgent: "*", allow: "/", disallow: ["/sections"] },
-    sitemap: "https://bhumirajagroworld.com/sitemap.xml",
-    host: "https://bhumirajagroworld.com",
+    sitemap: "https://bhumirajagroworld.in/sitemap.xml",
+    host: "https://bhumirajagroworld.in",
   };
 }
 ```
@@ -475,14 +475,14 @@ Only if you add a real on-site search URL. Otherwise skip SearchAction to avoid 
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Destroyer",
-  "image": ["https://bhumirajagroworld.com/product%20image/..."],
+  "image": ["https://bhumirajagroworld.in/product%20image/..."],
   "description": "…",
   "sku": "destroyer",
   "brand": { "@type": "Brand", "name": "Bhumiraj Agro World" },
   "category": "Insecticides",
   "offers": {
     "@type": "Offer",
-    "url": "https://bhumirajagroworld.com/products/destroyer",
+    "url": "https://bhumirajagroworld.in/products/destroyer",
     "availability": "https://schema.org/InStock",
     "priceCurrency": "INR"
   }
