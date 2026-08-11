@@ -62,7 +62,7 @@ export default function ProductsClient() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search by name or category…"
-            className="w-full border-0 border-b border-line bg-transparent py-2.5 pl-7 pr-2 text-sm text-ink outline-none transition placeholder:text-muted/60 focus:border-primary"
+            className="w-full border-0 border-b border-line bg-transparent py-2.5 pl-7 pr-2 text-base text-ink outline-none transition placeholder:text-muted/60 focus:border-primary"
           />
         </label>
 

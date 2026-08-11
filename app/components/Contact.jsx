@@ -92,7 +92,7 @@ export default function Contact() {
                       required
                       rows={4}
                       placeholder="Tell us about your crop or the product you need…"
-                      className="w-full resize-none rounded-2xl border border-leaf-700/15 bg-cream/60 px-4 py-3 text-sm text-leaf-950 outline-none ring-leaf-500/30 transition placeholder:text-leaf-800/40 focus:border-leaf-500/40 focus:ring-2"
+                      className="w-full resize-none rounded-2xl border border-leaf-700/15 bg-cream/60 px-4 py-3 text-base text-leaf-950 outline-none ring-leaf-500/30 transition placeholder:text-leaf-800/40 focus:border-leaf-500/40 focus:ring-2"
                     />
                   </div>
 
@@ -135,7 +135,7 @@ function Field({ label, placeholder, type = "text", required = true }) {
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-2xl border border-leaf-700/15 bg-cream/60 px-4 py-3 text-sm text-leaf-950 outline-none ring-leaf-500/30 transition placeholder:text-leaf-800/40 focus:border-leaf-500/40 focus:ring-2"
+        className="w-full rounded-2xl border border-leaf-700/15 bg-cream/60 px-4 py-3 text-base text-leaf-950 outline-none ring-leaf-500/30 transition placeholder:text-leaf-800/40 focus:border-leaf-500/40 focus:ring-2"
       />
     </div>
   );

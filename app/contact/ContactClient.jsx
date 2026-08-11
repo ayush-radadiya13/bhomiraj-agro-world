@@ -103,7 +103,7 @@ export default function ContactClient() {
                       required
                       rows={5}
                       placeholder="Tell us about the product or support you need…"
-                      className="w-full resize-none rounded-2xl border border-line bg-[#f8faf8] px-4 py-3 text-sm text-ink outline-none transition placeholder:text-muted/60 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20"
+                      className="w-full resize-none rounded-2xl border border-line bg-[#f8faf8] px-4 py-3 text-base text-ink outline-none transition placeholder:text-muted/60 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
                   <button
@@ -227,7 +227,7 @@ function Field({ label, name, type = "text", placeholder, required }) {
         type={type}
         required={required}
         placeholder={placeholder}
-        className="w-full rounded-2xl border border-line bg-[#f8faf8] px-4 py-3 text-sm text-ink outline-none transition placeholder:text-muted/60 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20"
+        className="w-full rounded-2xl border border-line bg-[#f8faf8] px-4 py-3 text-base text-ink outline-none transition placeholder:text-muted/60 focus:border-primary focus:bg-white focus:ring-2 focus:ring-primary/20"
       />
     </div>
   );
