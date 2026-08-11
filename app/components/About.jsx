@@ -29,7 +29,10 @@ export default function About() {
             highlight={brand.name}
             description="Bhumiraj Agro World is committed to delivering premium-quality agricultural products including seeds, crop protection solutions, and plant nutrition products. We help farmers achieve healthier crops, improved productivity, and sustainable farming practices through reliable and innovative agricultural solutions."
           />
-          <Link href="/about" className="btn-primary mt-2 w-full sm:w-auto">
+          <Link
+            href="/about"
+            className="btn-primary mt-2 w-fit !min-h-11 !px-6 !py-3 text-sm sm:!min-h-12 sm:!px-7 sm:!py-3.5 sm:text-base"
+          >
             Read More
           </Link>
         </Reveal>

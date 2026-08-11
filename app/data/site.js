@@ -32,6 +32,7 @@ const img = {
   fungicide: "/product%20image/fungicide-cat.png",
   herbicide: "/product%20image/herbicide-cat.png",
   pgr: "/product%20image/PGR-cat.png",
+  categoryMain: "/assets/category-main.png",
 };
 
 export const brand = {

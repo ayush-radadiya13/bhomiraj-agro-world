@@ -7,6 +7,8 @@ export default function SectionHeading({
   title,
   highlight,
   description,
+  descriptionClassName,
+  className = "",
   align = "center",
   light = false,
 }) {
@@ -25,7 +27,7 @@ export default function SectionHeading({
     <Reveal
       className={`mb-7 max-w-2xl sm:mb-9 md:mb-11 ${
         align === "center" ? "mx-auto text-center" : "text-left"
-      }`}
+      } ${className}`}
     >
       {eyebrow && (
         <p
@@ -61,9 +63,12 @@ export default function SectionHeading({
       </h2>
       {description && (
         <p
-          className={`mt-3 text-sm leading-relaxed sm:mt-4 sm:text-base md:text-lg ${
-            light ? "text-white/75" : "text-muted"
-          }`}
+          className={
+            descriptionClassName ||
+            `mt-3 text-sm leading-relaxed sm:mt-4 sm:text-base md:text-lg ${
+              light ? "text-white/75" : "text-muted"
+            }`
+          }
         >
           {description}
         </p>

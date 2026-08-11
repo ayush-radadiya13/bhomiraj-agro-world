@@ -61,7 +61,7 @@ export default function Navbar() {
       >
         <nav className="container-site flex items-center justify-between gap-3 py-2 sm:gap-4">
           <Link href="/" className="flex shrink-0 items-center" aria-label={brand.name}>
-            <span className="relative h-10 w-10 overflow-hidden rounded-full bg-white shadow-soft ring-1 ring-primary/10 sm:h-12 sm:w-12">
+            <span className="relative h-12 w-12 overflow-hidden rounded-full bg-white shadow-soft ring-1 ring-primary/10 sm:h-14 sm:w-14">
               <SmartImage
                 src={brand.logo}
                 alt={brand.name}

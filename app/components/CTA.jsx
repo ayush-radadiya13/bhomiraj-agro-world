@@ -23,11 +23,17 @@ export default function CTA() {
             Explore our agricultural products or contact our team for
             personalised product guidance.
           </p>
-          <div className="mt-6 flex w-full flex-row flex-wrap items-center justify-center gap-3 sm:mt-7">
-            <Link href="/products" className="btn-primary min-w-0 flex-1 sm:flex-none sm:w-auto">
+          <div className="mt-6 flex w-full flex-row items-center justify-center gap-2.5 sm:mt-7 sm:gap-3">
+            <Link
+              href="/products"
+              className="btn-primary min-w-0 flex-1 whitespace-nowrap px-3 text-sm sm:flex-none sm:w-auto sm:px-7 sm:text-base"
+            >
               Explore Products
             </Link>
-            <Link href="/contact" className="btn-outline min-w-0 flex-1 sm:flex-none sm:w-auto">
+            <Link
+              href="/contact"
+              className="btn-outline min-w-0 flex-1 whitespace-nowrap px-3 text-sm sm:flex-none sm:w-auto sm:px-7 sm:text-base"
+            >
               Contact Now
             </Link>
           </div>
