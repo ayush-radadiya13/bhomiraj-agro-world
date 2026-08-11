@@ -38,7 +38,7 @@ export default function Hero() {
       {/* Soft light wash from the left so black type stays readable */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/50 via-white/20 to-white/35 md:bg-gradient-to-r md:from-white/55 md:via-white/25 md:to-transparent" />
 
-      <div className="absolute inset-0 z-10 flex items-end justify-start px-5 pb-10 pt-24 sm:px-6 sm:pb-12 sm:pt-28 md:items-center md:px-10 md:pb-16 md:pt-20 lg:px-14 lg:pb-20 xl:px-20">
+      <div className="absolute inset-0 z-10 flex items-center justify-start px-5 py-24 sm:px-6 sm:py-28 md:px-10 md:py-16 lg:px-14 lg:py-20 xl:px-20">
         <div className="flex w-full max-w-[600px] flex-col items-start text-left">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -66,18 +66,12 @@ export default function Hero() {
           >
             <Link
               href="/products"
-              className="group inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-primary px-3.5 py-2.5 text-xs font-600 text-white shadow-[0_10px_24px_-10px_rgba(15,53,19,0.4)] transition duration-300 hover:-translate-y-0.5 hover:bg-primary-800 hover:shadow-[0_14px_32px_-12px_rgba(15,53,19,0.45)] sm:flex-none sm:gap-2 sm:rounded-2xl sm:px-5 sm:py-3 sm:text-sm md:px-6"
+              className="group inline-flex items-center justify-center gap-1.5 rounded-xl bg-primary px-3.5 py-2.5 text-xs font-600 text-white shadow-[0_10px_24px_-10px_rgba(15,53,19,0.4)] transition duration-300 hover:-translate-y-0.5 hover:bg-primary-800 hover:shadow-[0_14px_32px_-12px_rgba(15,53,19,0.45)] sm:gap-2 sm:rounded-2xl sm:px-5 sm:py-3 sm:text-sm md:px-6"
             >
               Explore Products
               <span className="flex h-5 w-5 items-center justify-center rounded-lg bg-white/15 text-white transition duration-300 group-hover:translate-x-0.5 sm:h-6 sm:w-6 sm:rounded-xl">
                 <ArrowRight className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
               </span>
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex flex-1 items-center justify-center rounded-xl border border-black/20 bg-white/80 px-3.5 py-2.5 text-xs font-600 text-black backdrop-blur-sm transition hover:border-black/35 hover:bg-white sm:flex-none sm:rounded-2xl sm:px-5 sm:py-3 sm:text-sm md:px-6"
-            >
-              Contact Us
             </Link>
           </motion.div>
         </div>

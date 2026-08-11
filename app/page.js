@@ -44,9 +44,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <WhyChooseUs />
       <Categories />
       <FeaturedProducts />
+      <WhyChooseUs />
       <About />
     </>
   );
